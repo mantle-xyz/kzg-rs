@@ -1,0 +1,16 @@
+[package]
+description = "Rust implementation of KZG point evaluation"
+edition = "2021"
+license = "MIT"
+name = "kzg-rs"
+version = "0.2.3"
+repository = "https://github.com/mantle-xyz/kzg-rs"
+
+[dependencies]
+rust-kzg-bn254 = { git = "https://github.com/Layr-Labs/rust-kzg-bn254", rev = "808d3bf09f0163c74769e4142ccfb33f2ce56906" }
+ark-bn254 = "0.5.0"
+ark-ff = { version = "0.5.0", features = ["parallel"] }
+
+tracing = { version = "0.1.41", default-features = false }
+
+alloy-primitives = { version = "0.8.13", default-features = false }
