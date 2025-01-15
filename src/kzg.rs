@@ -5,7 +5,7 @@ use rust_kzg_bn254::blob::Blob;
 use rust_kzg_bn254::kzg::KZG;
 
 // nitro code https://github.com/Layr-Labs/nitro/blob/14f09745b74321f91d1f702c3e7bb5eb7d0e49ce/arbitrator/prover/src/kzgbn254.rs#L30
-fn compute_bn254_kzg_proof( blob: &[u8]) -> Result<Vec<u8>, Error> {
+pub fn compute_bn254_kzg_proof( blob: &[u8]) -> Result<Vec<u8>, Error> {
     let mut kzg = match KZG::setup(
         "resources/g1.32mb.point",
         "",
