@@ -2,7 +2,7 @@
 description = "Rust implementation of KZG point evaluation"
 edition = "2021"
 license = "MIT"
-name = "kzg-rs"
+name = "kzg-rs-bn254"
 version = "0.2.3"
 repository = "https://github.com/mantle-xyz/kzg-rs"
 
